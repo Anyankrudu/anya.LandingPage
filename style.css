@@ -1,0 +1,664 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  font-size: 10px;
+}
+
+.container {
+  width: 950px;
+  /* height: 2500px; */
+  margin: 200px 284px;
+  padding-top: 32px;
+  box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+header,
+section {
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-family: "Playfair+Display";
+  font-size: 24px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-bottom: 64px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header-links {
+  display: flex;
+  gap: 48px;
+}
+
+.page-logo {
+  justify-self: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+.account-link {
+  justify-self: center;
+}
+
+.header-caption {
+  display: grid;
+  grid-template-rows: repeat(2);
+  justify-items: center;
+}
+
+.header-price {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.header-title {
+  margin-bottom: 48px;
+}
+
+.header-bonus-msg {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  margin-bottom: 48px;
+  font-size: 12px;
+}
+
+.header-bonus-offer {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.header-buttons {
+  margin-top: 8px;
+}
+
+.pro-yearly-box {
+  display: grid;
+  grid-template-columns: 400px 210px;
+  /* padding: 32px 16px; */
+  gap: 64px;
+  /* width: 690px; */
+  justify-content: center;
+  padding: 0px 12px;
+}
+
+.shadows {
+  display: flex;
+  justify-content: center;
+}
+
+.pro-yearly-box,
+.enterprise-box {
+  box-shadow: 0px 5px 30px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.pro-yearly-features-box {
+  padding-left: 16px;
+  padding-top: 4px;
+}
+
+.pro-yearly-features-caption {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-size: 8px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: aliceblue;
+  padding: 2px 4px;
+  font-size: 6px;
+  box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pro-yearly-features-title {
+  margin-bottom: 12px;
+}
+
+.pro-yearly-features-headings {
+  margin-bottom: 10px;
+  margin-top: 16px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.pro-yearly-features {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 32px;
+}
+
+.sub-pro-yearly {
+  gap: 55px;
+}
+
+.pro-yearly-features-1-4 {
+  flex: 0 1 180px;
+}
+
+.pro-yearly-features-5-6 {
+  flex: 0 1 250px;
+}
+
+.pro-yearly-promotion {
+  /* padding-left: 12px; */
+  /* text-transform: uppercase; */
+  font-size: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 222px;
+  background-color: #c6cccd;
+  border-radius: 10px;
+  padding: 16px 12px;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+}
+
+.pro-yearly-promotion-amount {
+  font-size: 44px;
+  margin-bottom: 24px;
+}
+
+.pro-yearly-promotion-msg {
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.pro-yearly-promotion-button:link {
+  border-radius: 10px;
+  padding: 12px 12px;
+}
+
+.pro-yearly-promotion-button:link,
+.pro-yearly-promotion-button:visited {
+  background-color: red;
+  color: white;
+  display: inline-block;
+  font-weight: 500;
+  /* box-shadow: 200px 200px 200px 200px white; */
+}
+.buy-now-button-link:link,
+.buy-now-button-link:visited {
+  background-color: red;
+  color: white;
+  display: inline-block;
+  font-weight: 500;
+  /* box-shadow: 200px 200px 200px 200px white; */
+}
+
+.buy-now-button-link:link {
+  border-radius: 5px;
+  padding: 12px 12px;
+}
+
+.pro-yearly-icons {
+  height: 8px;
+}
+
+.sentences {
+  display: flex;
+  justify-content: center;
+  /* width: 170px; */
+}
+
+.first-sentence,
+.sixth-sentence {
+  width: 175px;
+}
+
+.second-sentence-1 {
+  width: 200px;
+}
+
+.second-sentence-2 {
+  width: 145px;
+}
+
+.third-sentence-1 {
+  width: 180px;
+}
+.third-sentence-2 {
+  width: 115px;
+}
+
+.fourth-sentence,
+.fifth-sentence,
+.ninth-sentence {
+  width: 45px;
+}
+
+.seventh-sentence-1 {
+  width: 160px;
+}
+
+.seventh-sentence-2 {
+  width: 70px;
+}
+
+.eigth-sentence {
+  width: 70px;
+}
+
+.tenth-sentence {
+  width: 220px;
+}
+
+.eleventh-sentence-1 {
+  width: 645px;
+}
+
+.eleventh-sentence-2 {
+  width: 125px;
+}
+
+.pro-yearly-icons-long {
+}
+
+.pro-yearly-promotion-demolink {
+  align-self: center;
+}
+
+.enterprise-box {
+  display: grid;
+  height: 240px;
+  grid-template-columns: 170px 180px 170px;
+  justify-content: center;
+  gap: 75px;
+  background-color: #1864ab;
+  padding: 16px 12px;
+  margin-bottom: 64px;
+
+  /* alternative to centralizing an entire grid container in a webpage */
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+}
+
+.enterprise-box-1 {
+}
+.enterprise-box-2 {
+  align-self: center;
+  /* grid-area: enterprise-box-2; */
+}
+.enterprise-box-3 {
+  justify-self: center;
+}
+
+.enterprise-title {
+  margin-bottom: 16px;
+  color: aliceblue;
+}
+
+.enterprise-heading {
+  margin-bottom: 16px;
+}
+
+.enterprise-caption {
+  margin-bottom: 16px;
+}
+
+.enterprise-promo-price {
+  margin-bottom: 16px;
+  font-size: 36px;
+  color: aliceblue;
+}
+
+.enterprise-icons {
+  height: 8px;
+}
+
+.enterprise-promo-button-link {
+  border: 2px solid gold;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: gold;
+}
+
+.enterprise-promo-button {
+  margin-top: 24px;
+}
+/* .header-info {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: ;
+} */
+
+.guarantee-box {
+  display: grid;
+  grid-template-columns: 700px;
+  justify-content: center;
+}
+
+.guarantee-heading {
+  margin-bottom: 16px;
+}
+
+.guarantee-msg {
+  margin-bottom: 16px;
+}
+
+.guarantee-offers {
+  margin-bottom: 24px;
+}
+
+.author-box {
+  margin-top: 32px;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 128px;
+}
+
+.author {
+  align-self: flex-end;
+}
+
+.guarantee-heading {
+}
+
+.questions-box {
+}
+
+.questions-heading {
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.all-questions {
+  display: flex;
+  gap: 30px;
+  flex: 1 1 0px;
+  justify-content: center;
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.2);
+  width: 280px;
+}
+
+.questions-1-6 {
+  flex: 0 1 280px;
+}
+
+.questions-7-12 {
+  flex: 0 1 280px;
+}
+
+.questions--long {
+  align-self: center;
+}
+
+.questions-icons {
+  height: 8px;
+}
+
+.subscribtion-box {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-bottom: 0px;
+  /* using linear gradient. learn about it */
+  background-color: #b9d7dc;
+  background-image: linear-gradient(to center, red, blue);
+}
+
+.subscribtion-text {
+}
+
+.sub-text {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribtion-links {
+  display: flex;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.subscription-demo {
+  align-self: center;
+}
+
+.about-box {
+  /* shrinking an entire grid container in a webpage */
+  display: grid;
+  grid-template-columns: 170px 170px 170px 170px;
+  margin-top: 32px;
+  width: 950px;
+  justify-content: center;
+}
+
+.about-section {
+  background-color: #1864ab;
+  padding: 4px 0px;
+}
+
+footer {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.about-caption {
+  margin-bottom: 24px;
+  color: aliceblue;
+}
+
+.about {
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.sub--about {
+  margin-top: 32px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* .nav-links {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.icons {
+  width: 10px;
+  height: 24px;
+}
+
+.icons--nav {
+  height: 14px;
+}
+
+.nav--resourcelink {
+  display: flex;
+  width: 58px;
+  justify-content: space-between;
+}
+
+.nav--demolink {
+  display: flex;
+  width: 48px;
+  justify-content: space-between;
+}
+
+.color-text-1 {
+  color: #22b8cf;
+}
+
+/* a:link {
+  color: #22b8cf;
+} */
+
+.color-link-1 {
+  color: #22b8cf;
+}
+
+.guarantee-icons,
+.enterprise-icons {
+  height: 8px;
+  stroke: #22b8cf;
+}
+
+.enterprise-icons {
+  fill: #b9d7dc;
+}
+
+.page-logo {
+  /* background-color: orange; */
+  position: relative;
+}
+
+/* adding little commercial tricks to page */
+.page-logo::before {
+  content: "NG";
+  background-color: red;
+  color: #b9d7dc;
+  font-size: 8px;
+  font-weight: bold;
+  padding: 4px 2px;
+  position: absolute;
+  display: inline-block;
+  top: -1.5px;
+  right: 98px;
+  font-family: "Playfair+Display";
+  border-radius: 10px;
+}
+
+.about-caption {
+  position: relative;
+}
+
+.about-caption::before {
+  content: "NG";
+  background-color: red;
+  color: #b9d7dc;
+  font-size: 8px;
+  font-weight: bold;
+  padding: 4px 2px;
+  position: absolute;
+  display: inline-block;
+  top: -1.5px;
+  right: 172px;
+  font-family: "Playfair+Display";
+  border-radius: 10px;
+}
+
+.icons--nav,
+.pro-yearly-icons,
+.questions-icons {
+  fill: #1864ab;
+}
+
+/* .icons--nav,
+.pro-yearly-icons,
+.questions-icons {
+  stroke: #087f5b;
+} */
+
+.header-title,
+.pro-yearly-features-caption,
+.pro-yearly-features-title,
+.pro-yearly-features-headings,
+.pro-yearly-promotion-amount,
+.author-name,
+.questions-heading,
+.subscribtion-text,
+.guarantee-heading {
+  color: #1864ab;
+  font-weight: bold;
+}
+
+.pro-yearly-monthly-promotion-amount {
+  color: #1864ab;
+}
+
+.pro-yearly-promotion-button,
+.enterprise-promo-button-link,
+.buy-now-button-link,
+.header-buttons-yearly,
+.header-buttons-monthly {
+  text-decoration: none;
+}
+
+.header-buttons-monthly,
+.header-buttons-yearly:link {
+  border-radius: 100px;
+  padding: 4px 16px;
+}
+
+.header-buttons-yearly:link,
+.header-buttons-yearly:visited {
+  background-color: #1864ab;
+  color: white;
+  display: inline-block;
+  font-weight: 500;
+  box-shadow: 200px 200px 200px 200px white;
+}
+
+.header-buttons-monthly:link,
+.header-buttons-monthly:visited {
+  color: #1864ab;
+  display: inline-block;
+  font-weight: 500;
+  border: white;
+  box-shadow: 0px 30px 130px 0 rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+
+.pro-yearly-features-caption {
+  border-style: #1864ab;
+}
+
+/* CHAIRS */
+/* adding shadow using box-shadow property. We can specify 5 values. horizontal offset value,
+vertical offset value, blur value of the shadow, the radius to scale the shadow (optional), color of shadow, */
+/* when shadow is very dark we use the RGBA notation to get get the alpha value and opacity */
+/* we can set the hori offset value to 0 cus we want the shadow to reflect vertically from up to down */
+/* .header-buttons-monthly:link {
+  box-shadow: 100px 200px 10px 0 rgba(151, 135, 135, 0.07);
+  border-radius: 100px;
+} */
+
+/* .pro-yearly-box {
+  box-shadow: 20px 30px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 50px;
+} */
+
+#free-offer {
+  background-color: #c4e3e9;
+}
